@@ -1,3 +1,7 @@
 {
-	"extends": "@remotion"
+	"extends": "@remotion",
+	"rules": {
+		// In Skia, style is either "fill" / "stroke"
+		"react/style-prop-object": "off"
+	}
 }
