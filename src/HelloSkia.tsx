@@ -11,7 +11,7 @@ import {
 	useFont,
 	Text,
 } from '@shopify/react-native-skia';
-import {staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
+import {spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {notargs} from './shaders/notargs';
 
 const rx = 600 * 0.8;
@@ -27,6 +27,15 @@ export const HelloSkia: React.FC = () => {
 
 	const bigFont = useFont(roboto, 64);
 	const smallFont = useFont(roboto, 30);
+
+	const progress = spring({
+		fps,
+		frame,
+		config: {
+			damping: 200,
+		},
+	});
+
 	if (bigFont === null || smallFont === null) {
 		return null;
 	}
@@ -53,7 +62,7 @@ export const HelloSkia: React.FC = () => {
 									}}
 									transform={[
 										{
-											rotate: (Math.PI / 3) * i,
+											rotate: (Math.PI / 3) * i * progress,
 										},
 									]}
 								>
