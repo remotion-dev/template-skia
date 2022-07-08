@@ -11,3 +11,6 @@ Config.Output.setOverwriteOutput(true);
 Config.Bundling.overrideWebpackConfig((config) => {
 	return enableSkia(config);
 });
+
+Config.Rendering.setConcurrency(2);
+Config.Puppeteer.setChromiumOpenGlRenderer('angle');
