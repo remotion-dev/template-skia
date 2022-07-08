@@ -11,7 +11,7 @@ import {
 	useFont,
 	Text,
 } from '@shopify/react-native-skia';
-import {useCurrentFrame, useVideoConfig} from 'remotion';
+import {staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {notargs} from './shaders/notargs';
 
 const rx = 600 * 0.8;
@@ -19,7 +19,7 @@ const ry = 250 * 0.8;
 
 const shader = Skia.RuntimeEffect.Make(notargs);
 
-const roboto = require('./fonts/Roboto-Bold.ttf');
+const roboto = staticFile('Roboto-Bold.ttf');
 
 export const HelloSkia: React.FC = () => {
 	const {height, width, fps} = useVideoConfig();
