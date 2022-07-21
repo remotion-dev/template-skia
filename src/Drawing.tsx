@@ -1,16 +1,8 @@
-import {
-	Fill,
-	Shader,
-	Skia,
-	Text,
-} from '@shopify/react-native-skia';
+import {Fill, Skia, Text} from '@shopify/react-native-skia';
 import React from 'react';
-import {useCurrentFrame, useVideoConfig} from 'remotion';
+import {useVideoConfig} from 'remotion';
 import {useTypefaces} from './AssetManager';
-import { SkiaNeon } from './SkiaNeon';
-
-
-
+import {SkiaNeon} from './SkiaNeon';
 
 export const Drawing: React.FC = () => {
 	const {width, height} = useVideoConfig();
