@@ -100,8 +100,8 @@ export const SkiaNeon = () => {
 			progress: progresses[def.index]!,
 		};
 	});
-	const b1 = 17.5 / 2;
-	const b2 = 3.5 / 2;
+	const b1 = 8;
+	const b2 = 1.75;
 	const progress8 = progresses[progresses.length - 1]!;
 	const blur1 = mix(progress8, b1 * 2, b1);
 	const blur2 = mix(progress8, b2 * 2, b2);
@@ -120,7 +120,7 @@ export const SkiaNeon = () => {
 						strokeJoin="round"
 						end={progress}
 					>
-						<Paint style="stroke" strokeWidth={30}>
+						<Paint style="stroke" strokeWidth={15}>
 							<LinearGradient
 								colors={colors}
 								start={topLeft(bounds)}
@@ -130,7 +130,7 @@ export const SkiaNeon = () => {
 								blur={interpolate(progress, [0, 0.5, 1], [0, blur1 * 2, blur1])}
 							/>
 						</Paint>
-						<Paint style="stroke" strokeWidth={8.75}>
+						<Paint style="stroke" strokeWidth={4}>
 							<LinearGradient
 								colors={colors}
 								start={topLeft(bounds)}
@@ -140,7 +140,7 @@ export const SkiaNeon = () => {
 								blur={interpolate(progress, [0, 0.5, 1], [0, blur2 * 2, blur2])}
 							/>
 						</Paint>
-						<Paint style="stroke" strokeWidth={3}>
+						<Paint style="stroke" strokeWidth={1}>
 							<LinearGradient
 								colors={colors}
 								start={topLeft(bounds)}
