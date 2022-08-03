@@ -10,7 +10,6 @@ export const Drawing: React.FC = () => {
 	const smallFont = Skia.Font(typefaces.Roboto, 30);
 	return (
 		<>
-			<Fill color="black" />
 			<SkiaNeon />
 			<Text
 				x={width / 2 - 270}
