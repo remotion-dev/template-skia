@@ -3,7 +3,7 @@ import {HelloSkia} from './HelloSkia';
 
 // Each <Composition> is an entry in the sidebar!
 
-export const RemotionVideo: React.FC = () => {
+export const RemotionRoot: React.FC = () => {
 	return (
 		<>
 			<Composition

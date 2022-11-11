@@ -3,6 +3,6 @@ import {registerRoot} from 'remotion';
 
 (async () => {
 	await LoadSkia();
-	const {RemotionVideo} = await import('./Video');
-	registerRoot(RemotionVideo);
+	const {RemotionRoot} = await import('./Root');
+	registerRoot(RemotionRoot);
 })();
