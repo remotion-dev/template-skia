@@ -12,7 +12,6 @@
 	"license": "UNLICENSED",
 	"dependencies": {
 		"@remotion/cli": "^3.0.0",
-		"@remotion/eslint-config": "^3.0.0",
 		"@remotion/skia": "^3.0.0",
 		"@shopify/react-native-skia": "0.1.139",
 		"react": "18.1.0",
@@ -21,6 +20,7 @@
 		"remotion": "^3.0.0"
 	},
 	"devDependencies": {
+		"@remotion/eslint-config": "^3.0.0",
 		"@types/react": "^18.0.6",
 		"@types/web": "^0.0.61",
 		"eslint": "^8.14.0",
