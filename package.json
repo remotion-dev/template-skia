@@ -13,9 +13,9 @@
 	"dependencies": {
 		"@remotion/cli": "^3.0.0",
 		"@remotion/skia": "^3.0.0",
-		"@shopify/react-native-skia": "0.1.139",
-		"react": "18.1.0",
-		"react-dom": "18.1.0",
+		"@shopify/react-native-skia": "0.1.172",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
 		"react-native-web": "^0.18.7",
 		"remotion": "^3.0.0"
 	},
