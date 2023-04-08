@@ -1,4 +1,4 @@
-import {Fill, Skia, Text} from '@shopify/react-native-skia';
+import {Skia, Text} from '@shopify/react-native-skia';
 import React from 'react';
 import {useVideoConfig} from 'remotion';
 import {useTypefaces} from './AssetManager';
