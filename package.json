@@ -11,16 +11,15 @@
 	"repository": {},
 	"license": "UNLICENSED",
 	"dependencies": {
-		"@remotion/cli": "^3.0.0",
-		"@remotion/skia": "^3.0.0",
-		"@shopify/react-native-skia": "0.1.172",
+		"@remotion/cli": "^3.3.94",
+		"@remotion/skia": "^3.3.94",
+		"@shopify/react-native-skia": "^0.1.190",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
-		"react-native-web": "^0.18.7",
-		"remotion": "^3.0.0"
+		"remotion": "^3.3.94"
 	},
 	"devDependencies": {
-		"@remotion/eslint-config": "^3.0.0",
+		"@remotion/eslint-config": "^3.3.94",
 		"@types/react": "^18.0.26",
 		"@types/web": "^0.0.86",
 		"eslint": "^8.30.0",
