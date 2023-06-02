@@ -1,5 +1,5 @@
 import {Composition} from 'remotion';
-import {HelloSkia} from './HelloSkia';
+import {HelloSkia, schema} from './HelloSkia';
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -13,6 +13,8 @@ export const RemotionRoot: React.FC = () => {
 				fps={30}
 				width={1920}
 				height={1080}
+				schema={schema}
+				defaultProps={{color1: '#ff00ea', color2: '#8af49c'}}
 			/>
 		</>
 	);

@@ -4,13 +4,16 @@ import {useVideoConfig} from 'remotion';
 import {useTypefaces} from './AssetManager';
 import {SkiaNeon} from './SkiaNeon';
 
-export const Drawing: React.FC = () => {
+export const Drawing: React.FC<{
+	color1: string;
+	color2: string;
+}> = ({color1, color2}) => {
 	const {width, height} = useVideoConfig();
 	const typefaces = useTypefaces();
 	const smallFont = Skia.Font(typefaces.Roboto, 30);
 	return (
 		<>
-			<SkiaNeon />
+			<SkiaNeon color1={color1} color2={color2} />
 			<Text
 				x={width / 2 - 270}
 				y={height * 0.9}
