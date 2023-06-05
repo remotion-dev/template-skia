@@ -26,8 +26,6 @@ export const HelloSkia: React.FC<z.infer<typeof schema>> = ({
 		return null;
 	}
 
-	console.log(color1, color2);
-
 	return (
 		<SkiaCanvas height={height} width={width}>
 			<AssetManager

@@ -1,5 +1,4 @@
 import {useMemo} from 'react';
-import {zColor} from '@remotion/zod-types';
 import {
 	Blur,
 	Fill,
@@ -28,10 +27,6 @@ const src = rect(0, 0, 2630, 1325);
 const duration = 15;
 
 export const durationInFrames = 500;
-
-const color1 = '#3FCEBC';
-const color2 = '#9F5EE2';
-const color3 = '#FF645E';
 
 export const SkiaNeon: React.FC<{
 	color1: string;
