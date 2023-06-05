@@ -8,12 +8,12 @@ import {zColor} from '@remotion/zod-types';
 
 const roboto = staticFile('Roboto-Bold.ttf');
 
-export const schema = z.object({
+export const helloSkiaSchema = z.object({
 	color1: zColor(),
 	color2: zColor(),
 });
 
-export const HelloSkia: React.FC<z.infer<typeof schema>> = ({
+export const HelloSkia: React.FC<z.infer<typeof helloSkiaSchema>> = ({
 	color1,
 	color2,
 }) => {
