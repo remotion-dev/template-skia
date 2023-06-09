@@ -14,7 +14,7 @@ export const RemotionRoot: React.FC = () => {
 				width={1920}
 				height={1080}
 				schema={helloSkiaSchema}
-				defaultProps={{color1: '#ff00ea', color2: '#8af49c'}}
+				defaultProps={{color1: '#0d81ed', color2: '#c14dff'}}
 			/>
 		</>
 	);
