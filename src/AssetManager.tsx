@@ -43,7 +43,7 @@ const resolveAsset = async <T,>(
 	type: 'image' | 'typeface',
 	name: string,
 	asset: ReturnType<typeof require>,
-	factory: (data: SkData) => T
+	factory: (data: SkData) => T,
 ) => {
 	const data = await Skia.Data.fromURI(asset);
 	return {
@@ -64,16 +64,16 @@ export const AssetManager = ({
 			const assets = await Promise.all([
 				...Object.keys(imagesToLoad).map((name) =>
 					resolveAsset('image', name, imagesToLoad[name], (data: SkData) =>
-						Skia.Image.MakeImageFromEncoded(data)
-					)
+						Skia.Image.MakeImageFromEncoded(data),
+					),
 				),
 				...Object.keys(typefacesToLoad).map((name) =>
 					resolveAsset(
 						'typeface',
 						name,
 						typefacesToLoad[name],
-						(data: SkData) => Skia.Typeface.MakeFreeTypeFaceFromData(data)
-					)
+						(data: SkData) => Skia.Typeface.MakeFreeTypeFaceFromData(data),
+					),
 				),
 			]);
 			const images: Images = {};

@@ -84,7 +84,7 @@ export const SkiaNeon: React.FC<{
 		PADDING,
 		PADDING,
 		config.width - PADDING * 2,
-		config.height - PADDING * 2
+		config.height - PADDING * 2,
 	);
 	const progresses = [
 		interpolate(frame, [0, duration], [0, 1], CLAMP),
