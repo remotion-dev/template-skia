@@ -15,7 +15,7 @@
     "@remotion/cli": "^4.0.0",
     "@remotion/skia": "^4.0.0",
     "@remotion/zod-types": "^4.0.0",
-    "@shopify/react-native-skia": "2.0.0-next.3",
+    "@shopify/react-native-skia": "2.0.0-next.4",
     "canvaskit-wasm": "0.40.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
@@ -24,7 +24,7 @@
   },
   "resolutions": {
     "canvaskit-wasm": "0.40.0",
-    "@shopify/react-native-skia": "2.0.0-next.3"
+    "@shopify/react-native-skia": "2.0.0-next.4"
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "^4.0.0",
